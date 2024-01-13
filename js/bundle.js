@@ -179,7 +179,7 @@ function cards() {
     }
   }
 
-  (0,_services_services__WEBPACK_IMPORTED_MODULE_0__.getResource)("http://localhost:3000/menu").then((data) => {
+  (0,_services_services__WEBPACK_IMPORTED_MODULE_0__.getResource)("https://github.com/HaxProf/food-project/blob/main/db.json").then((data) => {
     data.forEach(({ img, altimg, title, descr, price }) => {
       new MenuCard(
         img,
