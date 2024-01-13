@@ -110,7 +110,7 @@ function calc() {
           weight = +input.value;
           break;
         case "age":
-          age = +input.value;
+          age = +input.value;post
           break;
       }
       calcTotal();
@@ -239,7 +239,7 @@ function forms(formSelector, modalTimerId) {
 
       const json = JSON.stringify(Object.fromEntries(formData.entries()));
 
-      (0,_services_services__WEBPACK_IMPORTED_MODULE_1__.postData)("http://localhost:3000/requests", json)
+      (0,_services_services__WEBPACK_IMPORTED_MODULE_1__.postData)("https://github.com/HaxProf/food-project/blob/main/db.json", json)
         .then((data) => {
           console.log(data);
           showThanksModal(message.success);
