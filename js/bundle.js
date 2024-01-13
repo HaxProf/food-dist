@@ -179,7 +179,7 @@ function cards() {
     }
   }
 
-  (0,_services_services__WEBPACK_IMPORTED_MODULE_0__.getResource)("https://github.com/HaxProf/food-project/blob/main/db.json").then((data) => {
+  (0,_services_services__WEBPACK_IMPORTED_MODULE_0__.getResource)("https://github.com/haxprof/food-project/blob/[main|master]/db.json").then((data) => {
     data.forEach(({ img, altimg, title, descr, price }) => {
       new MenuCard(
         img,
@@ -239,7 +239,7 @@ function forms(formSelector, modalTimerId) {
 
       const json = JSON.stringify(Object.fromEntries(formData.entries()));
 
-      (0,_services_services__WEBPACK_IMPORTED_MODULE_1__.postData)("https://github.com/HaxProf/food-project/blob/main/db.json", json)
+      (0,_services_services__WEBPACK_IMPORTED_MODULE_1__.postData)("https://github.com/haxprof/food-project/blob/[main|master]/db.json", json)
         .then((data) => {
           console.log(data);
           showThanksModal(message.success);
