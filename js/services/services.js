@@ -1,5 +1,6 @@
 const postData = async (url, data) => {
   let res = await fetch(url, {
+    mode: "cors",
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -10,7 +11,7 @@ const postData = async (url, data) => {
   return await res.json();
 };
 async function getResource(url) {
-  let res = await fetch(url);
+  let res = await fetch(url, { mode: "cors" });
 
   if (!res.ok) {
     throw new Error(`Could not fetch ${url}, status: ${res.status}`);
