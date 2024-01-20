@@ -1,4 +1,6 @@
 "use strict";
+require("es6-promise").polyfill();
+import "nodelist-foreach-polyfill";
 import calc from "./modules/calc";
 import cards from "./modules/cards";
 import forms from "./modules/forms";
@@ -19,7 +21,7 @@ window.addEventListener("DOMContentLoaded", () => {
     "tabheader__item_active"
   );
   modal("[data-modal]", ".modal", modalTimerId);
-  timer(".timer", "2024-01-14");
+  timer(".timer", "2026-01-14");
   cards();
   calc();
   forms("form", modalTimerId);
